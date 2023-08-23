@@ -1,0 +1,8 @@
+﻿@helper GetBmi(double height, double weight)
+{
+
+    var value = weight / Math.Pow((height / 100), 2);
+
+    <span>@value</span>
+}
+

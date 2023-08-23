@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Index";
+    List<string> fackData = new List<string>(){
+        "猛男1",
+        "猛男2",
+        "猛男3",
+    };
+}
+@functions {
+    /// <summary>
+    /// 自定義換行
+    /// </summary>
+    /// <returns></returns>
+    public MvcHtmlString Br()
+    {
+        var builder = new TagBuilder("br");
+
+        return MvcHtmlString.Create(builder.ToString(TagRenderMode.SelfClosing));
+    }
+
+    /// <summary>
+    /// 比較與 HtmlHelper 間的差異，為了達成格式=紅色字，這裡必須用字串方式串接 (缺點: 容易打錯字)
+    /// </summary>
+    public static string GetBmiByFunc2(double height, double weight)
+    {
+        var result = weight / Math.Pow((height / 100), 2);
+
+        return String.Format("<span style='color: red'>身高:{0} 體重{1}，BMI結果{2}</span>", height, weight, result);
+    }
+}
+
+
+<h2>RazorArea DefaultController IndexAction Page.</h2>
+
+<a href="https://www.google.com" class="btn btn-success">content</a>
+
+
+@*透過Partial直接生成頁面========================================================================*@
+
+@Html.ActionLink("首頁", "Index", "Home", new { area = "" }, new { @class = "btn btn-info" })
+<hr />
+@Html.Partial("_PartialTest", "Html.Partial")
+<hr />
+@{
+    Html.RenderPartial("_PartialTest", "Html.RenderPartial");
+}
+<hr />
+@Html.Partial("_PartialGetStringList", fackData)
+
+<hr />
+@*透過Action訪問Controller對應的路徑，並返回邏輯渲染後的頁面=====================================*@
+
+@*使用Action頁面渲染*@
+@Html.Action("_PartialChildAction", "Default", new { Name = "Young" })@*返回的是字符串。*@
+<hr />
+@{
+    @*返回的是View，因為返回結果是void，因此得用大括號包起。*@
+    Html.RenderAction("_PartialChildAction", "Default", new { Name = "Young" });
+}
+<hr />
+
+@*指定對應路徑，並設定帶過去的參數類型值=========================================================*@
+@*指定Area、Controller、Action 的Link設置*@
+@Html.RouteLink("回到本頁",
+                new { action = "Index", controller = "Default", area = "RazorLearnArea", name = "XDXD" },
+                new { @class = "btn btn-info", style = "font-size:Large", id = "5666" })
+
+@*生成表單=======================================================================================*@
+@*表單*@
+@using (Html.BeginForm("PostData", "Html", FormMethod.Get))
+{
+    @Html.TextBox("UserNameGet");
+    @Html.Password("PasswordGet");
+    <input type="submit" value="SubmitButon" />
+}
+
+@*自定義HtmlTag==================================================================================*@
+下面有換行
+@Html.Raw(Br())
+
+@Html.Raw(GetBmiByFunc2(178, 85))
+
+@*View設定Script方式=============================================================================*@
+@*頁面加載好才執行的Script語句*@
+@section Scripts{
+    <script>
+        $(function () {
+            alert('XD');
+        })
+    </script>
+}
+
+

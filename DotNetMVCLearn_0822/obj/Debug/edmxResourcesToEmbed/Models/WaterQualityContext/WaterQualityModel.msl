@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaterQualityModelStoreContainer" CdmEntityContainer="WaterQualityEntities">
+    <EntitySetMapping Name="Aquarium">
+      <EntityTypeMapping TypeName="WaterQualityModel.Aquarium">
+        <MappingFragment StoreEntitySet="Aquarium">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Auth001Id" ColumnName="Auth001Id" />
+          <ScalarProperty Name="AquariumUnitNum" ColumnName="AquariumUnitNum" />
+          <ScalarProperty Name="WaterType" ColumnName="WaterType" />
+          <ScalarProperty Name="BindTag" ColumnName="BindTag" />
+          <ScalarProperty Name="createTime" ColumnName="createTime" />
+          <ScalarProperty Name="modifyTime" ColumnName="modifyTime" />
+          <ScalarProperty Name="customAquaruimName" ColumnName="customAquaruimName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AquariumSituation">
+      <EntityTypeMapping TypeName="WaterQualityModel.AquariumSituation">
+        <MappingFragment StoreEntitySet="AquariumSituation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AquariumId" ColumnName="AquariumId" />
+          <ScalarProperty Name="temperature" ColumnName="temperature" />
+          <ScalarProperty Name="Turbidity" ColumnName="Turbidity" />
+          <ScalarProperty Name="PH" ColumnName="PH" />
+          <ScalarProperty Name="TDS" ColumnName="TDS" />
+          <ScalarProperty Name="WaterLevel" ColumnName="WaterLevel" />
+          <ScalarProperty Name="createTime" ColumnName="createTime" />
+          <ScalarProperty Name="WaterLevelNum" ColumnName="WaterLevelNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Auth001">
+      <EntityTypeMapping TypeName="WaterQualityModel.Auth001">
+        <MappingFragment StoreEntitySet="Auth001">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LineID" ColumnName="LineID" />
+          <ScalarProperty Name="LineToken" ColumnName="LineToken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NotifySetRange">
+      <EntityTypeMapping TypeName="WaterQualityModel.NotifySetRange">
+        <MappingFragment StoreEntitySet="NotifySetRange">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AquariumId" ColumnName="AquariumId" />
+          <ScalarProperty Name="AquariumUnitNum" ColumnName="AquariumUnitNum" />
+          <ScalarProperty Name="temperatureUpperBound" ColumnName="temperatureUpperBound" />
+          <ScalarProperty Name="temperatureLowerBound" ColumnName="temperatureLowerBound" />
+          <ScalarProperty Name="pHUpperBound" ColumnName="pHUpperBound" />
+          <ScalarProperty Name="phLowerBound" ColumnName="phLowerBound" />
+          <ScalarProperty Name="TDSUpperBound" ColumnName="TDSUpperBound" />
+          <ScalarProperty Name="TDSLowerBound" ColumnName="TDSLowerBound" />
+          <ScalarProperty Name="TurbidityUpperBound" ColumnName="TurbidityUpperBound" />
+          <ScalarProperty Name="WaterLevelLowerBound" ColumnName="WaterLevelLowerBound" />
+          <ScalarProperty Name="NotifyTag" ColumnName="NotifyTag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

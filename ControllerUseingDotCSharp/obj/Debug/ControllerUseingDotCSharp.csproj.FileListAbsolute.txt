@@ -1,0 +1,10 @@
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\ControllerUseingDotCSharp\bin\Debug\ControllerUseingDotCSharp.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\ControllerUseingDotCSharp\bin\Debug\ControllerUseingDotCSharp.pdb
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\ControllerUseingDotCSharp\bin\Debug\System.Web.Mvc.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\ControllerUseingDotCSharp\bin\Debug\System.Web.Mvc.xml
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\ControllerUseingDotCSharp\bin\Debug\zh-Hant\System.Web.Mvc.resources.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\ControllerUseingDotCSharp\obj\Debug\ControllerUseingDotCSharp.csproj.AssemblyReference.cache
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\ControllerUseingDotCSharp\obj\Debug\ControllerUseingDotCSharp.csproj.CoreCompileInputs.cache
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\ControllerUseingDotCSharp\obj\Debug\ControllerUseingDotCSharp.csproj.CopyComplete
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\ControllerUseingDotCSharp\obj\Debug\ControllerUseingDotCSharp.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\ControllerUseingDotCSharp\obj\Debug\ControllerUseingDotCSharp.pdb

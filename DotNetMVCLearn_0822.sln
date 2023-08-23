@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMVCLearn_0822", "DotNetMVCLearn_0822\DotNetMVCLearn_0822.csproj", "{2593257C-B379-4532-9069-7CA6D2A3D477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerUseingDotCSharp", "ControllerUseingDotCSharp\ControllerUseingDotCSharp.csproj", "{9FC35DD4-4310-4E0E-B801-88C3E3C53F4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2593257C-B379-4532-9069-7CA6D2A3D477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2593257C-B379-4532-9069-7CA6D2A3D477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2593257C-B379-4532-9069-7CA6D2A3D477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2593257C-B379-4532-9069-7CA6D2A3D477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC35DD4-4310-4E0E-B801-88C3E3C53F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC35DD4-4310-4E0E-B801-88C3E3C53F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC35DD4-4310-4E0E-B801-88C3E3C53F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC35DD4-4310-4E0E-B801-88C3E3C53F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B47C0D78-C470-4E25-BE32-E270E30AE59F}
+	EndGlobalSection
+EndGlobal

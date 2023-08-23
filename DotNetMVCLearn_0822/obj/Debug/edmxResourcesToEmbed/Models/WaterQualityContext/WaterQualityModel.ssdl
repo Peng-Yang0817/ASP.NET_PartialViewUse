@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterQualityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Aquarium">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Auth001Id" Type="int" Nullable="false" />
+    <Property Name="AquariumUnitNum" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="WaterType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BindTag" Type="nvarchar" MaxLength="50" />
+    <Property Name="createTime" Type="datetime" />
+    <Property Name="modifyTime" Type="datetime" />
+    <Property Name="customAquaruimName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AquariumSituation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AquariumId" Type="int" Nullable="false" />
+    <Property Name="temperature" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Turbidity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PH" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TDS" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="WaterLevel" Type="nvarchar" MaxLength="50" />
+    <Property Name="createTime" Type="datetime" />
+    <Property Name="WaterLevelNum" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Auth001">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LineID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LineToken" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NotifySetRange">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AquariumId" Type="int" />
+    <Property Name="AquariumUnitNum" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="temperatureUpperBound" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="temperatureLowerBound" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="pHUpperBound" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="phLowerBound" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TDSUpperBound" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TDSLowerBound" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TurbidityUpperBound" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="WaterLevelLowerBound" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NotifyTag" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="WaterQualityModelStoreContainer">
+    <EntitySet Name="Aquarium" EntityType="Self.Aquarium" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AquariumSituation" EntityType="Self.AquariumSituation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Auth001" EntityType="Self.Auth001" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NotifySetRange" EntityType="Self.NotifySetRange" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
