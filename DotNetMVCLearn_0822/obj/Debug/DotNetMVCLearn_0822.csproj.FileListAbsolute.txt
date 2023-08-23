@@ -91,3 +91,6 @@ C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Entity
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\EntityFramework.xml
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\EntityFramework.SqlServer.xml
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\zh-Hant\EntityFramework.resources.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\DotNetMVCLearn_EF.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\DotNetMVCLearn_EF.pdb
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\DotNetMVCLearn_EF.dll.config

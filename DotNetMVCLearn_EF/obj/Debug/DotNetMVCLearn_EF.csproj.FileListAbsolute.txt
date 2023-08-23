@@ -1,0 +1,13 @@
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\bin\Debug\DotNetMVCLearn_EF.dll.config
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\bin\Debug\DotNetMVCLearn_EF.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\bin\Debug\DotNetMVCLearn_EF.pdb
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\bin\Debug\EntityFramework.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\bin\Debug\EntityFramework.xml
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\obj\Debug\DotNetMVCLearn_EF.csproj.AssemblyReference.cache
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\obj\Debug\DotNetMVCLearn_EF.csproj.CoreCompileInputs.cache
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\obj\Debug\DotNetMVCLearn_EF.csproj.CopyComplete
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\obj\Debug\DotNetMVCLearn_EF.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\obj\Debug\DotNetMVCLearn_EF.pdb

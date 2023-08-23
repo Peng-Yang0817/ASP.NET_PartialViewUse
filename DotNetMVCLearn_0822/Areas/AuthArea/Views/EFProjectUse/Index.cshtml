@@ -1,0 +1,80 @@
+﻿@using DotNetMVCLearn_EF.WaterQuality;
+@{
+    ViewBag.Title = "Index";
+    List<Auth001> datas = ViewBag.datas;
+}
+
+<h2>使用"其他"專案的EF取得資料.</h2>
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>代碼</th>
+            <th>使用者名</th>
+            <th>電子郵件</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (Auth001 item in datas as List<Auth001>)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.UserName</td>
+                <td>@item.Email</td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                language: {
+                    "emptyTable": "無資料...",
+                    "processing": "處理中...",
+                    "loadingRecords": "載入中...",
+                    "lengthMenu": "每頁 _MENU_ 筆資料",
+                    "zeroRecords": "無搜尋結果",
+                    "info": "",
+                    "infoEmpty": "尚無資料",
+                    "infoFiltered": "(從 _MAX_ 筆資料過濾)",
+                    "infoPostFix": "",
+                    "search": "搜尋字串:",
+                    "paginate": {
+                        "first": "首頁",
+                        "last": "末頁",
+                        "next": "下頁",
+                        "previous": "前頁"
+                    },
+                    "aria": {
+                        "sortAscending": ": 升冪",
+                        "sortDescending": ": 降冪"
+                    }
+                },
+                //[顯示比數],[項目選擇]
+                //lengthMenu: [[50,10], [50,10]],
+
+                //[顯示比數],[項目選擇]
+                lengthMenu: [[5, 10], [5, 10]],
+
+                //asc升序、desc降序
+                order: [[0, "asc"]],
+
+                //項目排序功能
+                ordering: true,
+
+                //分頁功能
+                paging: true,
+
+                //搜尋欄位是否顯示
+                searching: true,
+
+            });
+
+        });
+    </script>
+} 

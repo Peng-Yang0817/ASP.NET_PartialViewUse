@@ -10,7 +10,7 @@ namespace DotNetMVCLearn_0822.Areas.AuthArea.Controllers
     public class DefaultController : Controller
     {
 
-        // GET: AuthArea/Default
+        // 使用本專案擁有的EF連接
         public ActionResult Index()
         {
             List<Auth001> datas = new List<Auth001>();
@@ -23,5 +23,7 @@ namespace DotNetMVCLearn_0822.Areas.AuthArea.Controllers
 
             return View();
         }
+
+
     }
 }
