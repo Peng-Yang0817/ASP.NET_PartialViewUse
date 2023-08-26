@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerUseingDotCSharp",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMVCLearn_EF", "DotNetMVCLearn_EF\DotNetMVCLearn_EF.csproj", "{0C667D93-316A-490E-8B7B-53124817F7B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMVCLearn_Interface", "DotNetMVCLearn_Interface\DotNetMVCLearn_Interface.csproj", "{6608BA81-A5D8-4511-8B7A-8BC1C504ABBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMVCLearn_Service", "DotNetMVCLearn_Service\DotNetMVCLearn_Service.csproj", "{5298F503-C62E-4D67-9679-1BDD12D321D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{0C667D93-316A-490E-8B7B-53124817F7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C667D93-316A-490E-8B7B-53124817F7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C667D93-316A-490E-8B7B-53124817F7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6608BA81-A5D8-4511-8B7A-8BC1C504ABBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6608BA81-A5D8-4511-8B7A-8BC1C504ABBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6608BA81-A5D8-4511-8B7A-8BC1C504ABBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6608BA81-A5D8-4511-8B7A-8BC1C504ABBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5298F503-C62E-4D67-9679-1BDD12D321D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5298F503-C62E-4D67-9679-1BDD12D321D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5298F503-C62E-4D67-9679-1BDD12D321D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5298F503-C62E-4D67-9679-1BDD12D321D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
