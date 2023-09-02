@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MJb1B1rkxteao6k3JFT8mqRYCXCxnjAIuQaso5Tt2R/t8yZctDEqxHx5s+zwGFDyvNUqLA8GHdc44egTUqnfkg==",
+  "success": true,
+  "projectFilePath": "C:\\Codding\\DotNetLearnAndTest\\DotNetMVCLearn_0822\\DotNetMVCLearn_IOCService\\DotNetMVCLearn_IOCService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tcher\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\tcher\\.nuget\\packages\\unity\\5.11.10\\unity.5.11.10.nupkg.sha512"
+  ],
+  "logs": []
+}
