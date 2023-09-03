@@ -13,6 +13,7 @@ using DotNetMVCLearn_EF.WaterQuality; // Dd服務操作設置
 using DotNetMVCLearn_Service.WaterQuality; // 建立好的DdContext取得位置
 using System.Data.Entity;
 
+using DotNetMVCLearn_0822.Unitys;
 
 namespace DotNetMVCLearn_0822.Areas.AuthArea.Controllers
 {
@@ -21,22 +22,27 @@ namespace DotNetMVCLearn_0822.Areas.AuthArea.Controllers
         // GET: AuthArea/UseIOCgetService
         public ActionResult Index()
         {
-            // 讀取配置文件
-            ExeConfigurationFileMap fileMap = new ExeConfigurationFileMap();
-            fileMap.ExeConfigFilename = Path.Combine(AppDomain.CurrentDomain.BaseDirectory + "CfigFiles\\Unity.Config"); // 從bin目錄讀取的檔案
-            Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);
-            // 讀取SectionName為unity的節點
-            UnityConfigurationSection section = (UnityConfigurationSection)configuration.GetSection
-                (UnityConfigurationSection.SectionName);
+            //// ===================================== 調用配置與處理 START
+            //// 讀取配置文件
+            //ExeConfigurationFileMap fileMap = new ExeConfigurationFileMap();
+            //fileMap.ExeConfigFilename = Path.Combine(AppDomain.CurrentDomain.BaseDirectory + "CfigFiles\\Unity.Config"); // 從bin目錄讀取的檔案
+            //Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);
+            //// 讀取SectionName為unity的節點
+            //UnityConfigurationSection section = (UnityConfigurationSection)configuration.GetSection
+            //    (UnityConfigurationSection.SectionName);
 
-            // 實例化Container
-            IUnityContainer container = new UnityContainer();
-            // 將 [section] 在 [unity] 節點讀取的 [pengYangContainer] container 訊息，
-            //  交給我們實例化的 container
-            section.Configure(container, "pengYangContainer");
+            //// 實例化Container
+            //IUnityContainer container = new UnityContainer();
+            //// 將 [section] 在 [unity] 節點讀取的 [pengYangContainer] container 訊息，
+            ////  交給我們實例化的 container
+            //section.Configure(container, "pengYangContainer");
+            //// ===================================== END
 
 
-            DbContext dbContext = container.Resolve<DbContext>();
+            IUnityContainer container = UseIOCgetServiceControllerFactory.GetContainer();
+
+            // DbContext dbContext = container.Resolve<DbContext>();
+            // WaterQualityService建構式需要的DbContext會自動注入
             WaterQualityService waterQualityService = container.Resolve<WaterQualityService>();
 
             Auth001 data = waterQualityService.Find<Auth001>(3);

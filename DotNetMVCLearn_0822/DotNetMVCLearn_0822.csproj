@@ -199,6 +199,7 @@
       <DependentUpon>WaterQualityModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unitys\UseIOCgetServiceControllerFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
