@@ -18,8 +18,14 @@ namespace DotNetMVCLearn_IOCService.Models
         /// 注意 : 建構式完成後才會啟用的TAG，
         ///         因此不能再建構式內馬上使用。
         /// </summary>
+        private IServiceA _serviceA;
+
         [Dependency]
-        public IServiceA _serviceA { get; set; }
+        public IServiceA serviceA
+        {
+            get { return _serviceA; }
+            set { _serviceA = value; }
+        }
 
         public IServiceB _serviceB { get; set; }
 
@@ -32,15 +38,21 @@ namespace DotNetMVCLearn_IOCService.Models
                               _serviceB.GetServiceName());
         }
 
+
+        private IServiceB _serviceBNew;
         // 下面透過方法體附值
-        public IServiceB _serviceBNew { get; set; }
+        public IServiceB serviceBNew
+        {
+            get { return _serviceBNew; }
+            set { _serviceBNew = value; }
+        }
         // 支持方法注入
         [InjectionMethod]
         public void InitServiceB_New(IServiceB serviceB)
         {
             Console.WriteLine("開始進行方法注入");
-            _serviceBNew = serviceB;
-            _serviceBNew.serviceName = "方法體注入完成的服務";
+            serviceBNew = serviceB;
+            serviceBNew.serviceName = "方法體注入完成的B服務";
             Console.WriteLine("方法注入完成");
         }
 

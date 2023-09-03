@@ -11,3 +11,4 @@ C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\obj\Debug\Do
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\obj\Debug\DotNetMVCLearn_EF.csproj.CopyComplete
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\obj\Debug\DotNetMVCLearn_EF.dll
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\obj\Debug\DotNetMVCLearn_EF.pdb
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_EF\bin\Debug\zh-Hant\EntityFramework.SqlServer.resources.dll

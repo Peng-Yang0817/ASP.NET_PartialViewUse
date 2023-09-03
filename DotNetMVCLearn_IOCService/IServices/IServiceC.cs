@@ -8,9 +8,9 @@ namespace DotNetMVCLearn_IOCService.IServices
 {
     public interface IServiceC
     {
-        IServiceA _serviceA { get; set; }
+        IServiceA serviceA { get; set; }
 
-        IServiceB _serviceBNew { get; set; }
+        IServiceB serviceBNew { get; set; }
 
         void ShowC();
 

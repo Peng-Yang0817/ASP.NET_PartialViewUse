@@ -38,9 +38,8 @@ namespace DotNetMVCLearn_IOCService
             // ServiceC 中，使用屬性注入與方法注入。
             container.RegisterType<IServiceC, ServiceC>();
             IServiceC serviceC = container.Resolve<IServiceC>();
-            Console.WriteLine("透過[Dependency]註冊 {0} 成功!", serviceC._serviceA.GetServiceName());
-            serviceC._serviceBNew.serviceName = "方法注入產生的B服務";
-            Console.WriteLine("透過[InjectionMethod]註冊的 {0} 成功!", serviceC._serviceBNew.serviceName);
+            Console.WriteLine("透過[Dependency]註冊 {0} 成功!", serviceC.serviceA.GetServiceName());
+            Console.WriteLine("透過[InjectionMethod]註冊的 {0} 成功!", serviceC.serviceBNew.serviceName);
             serviceC.ShowC();
         }
     }
