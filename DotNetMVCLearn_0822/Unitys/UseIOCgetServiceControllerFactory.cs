@@ -9,7 +9,7 @@ using Unity;
 
 namespace DotNetMVCLearn_0822.Unitys
 {
-    public class UseIOCgetServiceControllerFactory
+    public static class UseIOCgetServiceControllerFactory
     {
         static IUnityContainer _Container = new UnityContainer();
         /// <summary>

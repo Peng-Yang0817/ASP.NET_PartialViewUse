@@ -73,12 +73,12 @@ namespace DotNetMVCLearn_0822.Areas.AuthArea.Controllers
             data.UserName = auth001NameAndEmail.UserName;
             data.Email = auth001NameAndEmail.Email;
 
+            TempData["Msg"] = "發生錯誤! 更動失敗。";
             if (waterQualityService.Update(data))
             {
                 TempData["Msg"] = "更動成功!";
             }
 
-            TempData["Msg"] = "發生錯誤! 更動失敗。";
             return RedirectToAction("Index", "GetDataUseDbContext", new { area = "AuthArea" });
         }
     }

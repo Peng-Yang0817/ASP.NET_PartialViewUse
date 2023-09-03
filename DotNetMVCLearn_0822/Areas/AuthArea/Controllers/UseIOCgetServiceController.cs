@@ -19,7 +19,9 @@ namespace DotNetMVCLearn_0822.Areas.AuthArea.Controllers
 {
     public class UseIOCgetServiceController : Controller
     {
-        // GET: AuthArea/UseIOCgetService
+        private IUnityContainer container = UseIOCgetServiceControllerFactory.GetContainer();
+
+        [HttpGet]
         public ActionResult Index()
         {
             //// ===================================== 調用配置與處理 START
@@ -39,7 +41,7 @@ namespace DotNetMVCLearn_0822.Areas.AuthArea.Controllers
             //// ===================================== END
 
 
-            IUnityContainer container = UseIOCgetServiceControllerFactory.GetContainer();
+
 
             // DbContext dbContext = container.Resolve<DbContext>();
             // WaterQualityService建構式需要的DbContext會自動注入
@@ -59,6 +61,47 @@ namespace DotNetMVCLearn_0822.Areas.AuthArea.Controllers
 
 
             return View();
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int Auth001Id)
+        {
+            WaterQualityService waterQualityService = container.Resolve<WaterQualityService>();
+
+            Auth001 data = waterQualityService.Find<Auth001>(Auth001Id);
+            if (data == null)
+            {
+                return RedirectToAction("Index", "UseIOCgetService", new { area = "AuthArea" });
+            }
+
+            ViewBag.data = data;
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Auth001 auth001NameAndEmail)
+        {
+            WaterQualityService waterQualityService = container.Resolve<WaterQualityService>();
+
+            Auth001 data = waterQualityService.Find<Auth001>(auth001NameAndEmail.Id);
+
+            // 使用者不存在
+            if (data == null)
+            {
+                return RedirectToAction("Index", "UseIOCgetService", new { area = "AuthArea" });
+            }
+
+            data.UserName = auth001NameAndEmail.UserName;
+            data.Email = auth001NameAndEmail.Email;
+
+            TempData["Msg"] = "發生錯誤! 更動失敗。";
+            if (waterQualityService.Update(data))
+            {
+                TempData["Msg"] = "更動成功!";
+            }
+
+            return RedirectToAction("Index", "UseIOCgetService", new { area = "AuthArea" });
         }
     }
 }
