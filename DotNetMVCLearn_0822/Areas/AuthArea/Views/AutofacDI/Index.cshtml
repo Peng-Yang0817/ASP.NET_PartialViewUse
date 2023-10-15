@@ -1,4 +1,8 @@
-﻿@using DotNetMVCLearn_0822.Areas.AuthArea.Controllers;
+﻿<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/Views/Auth/AutofacDI/Index.js"></script>
+
+@using DotNetMVCLearn_0822.Areas.AuthArea.Controllers
 @{
     ViewBag.Title = "Index";
     List<AquariumDetail> aquariumDatas = ViewBag.aquariumDatas;
@@ -33,9 +37,47 @@
 
 </table>
 
+
+<h2>使用AngularJS 打API 渲染資料</h2>
+<div ng-controller="HomeController">
+    <div>{{Message}}</div>
+    <!-- 在這裡渲染表格和錯誤訊息 -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Email</th>
+                <th>LineID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in data">
+                <td>{{item.Id}}</td>
+                <td>
+                    <input type="text" ng-model="item.UserName"/></td>
+                <td><input type="text" ng-model="item.Password" /></td>
+                <td><input type="text" ng-model="item.Email" /></td>
+                <td><input type="text" ng-model="item.LineID" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="white-space: pre-wrap; background: #1f1f1f; color: #9cdcfe;">
+        <h2>Data : peopleInfo</h2>
+        {{peopleInfo | json}}
+    </div>
+
+    <div ng-show="errorMessage">{{ errorMessage }}</div>
+</div>
+
 @section Scripts{
     <script>
         $(document).ready(function () {
+
+
+
             $('#example').DataTable({
                 language: {
                     "emptyTable": "無資料...",

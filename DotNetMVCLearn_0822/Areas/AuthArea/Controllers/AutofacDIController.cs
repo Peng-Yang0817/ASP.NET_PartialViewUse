@@ -34,6 +34,18 @@ namespace DotNetMVCLearn_0822.Areas.AuthArea.Controllers
 
             return View();
         }
+
+        /// <summary>
+        /// 取得全部的用戶資訊
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult GerAllAuth001Info() 
+        {
+            var Auth001s = _waterQualityDb.Auth001.ToList();
+
+            return Json(Auth001s,JsonRequestBehavior.AllowGet);
+        }
     }
 
     public class AquariumDetail 

@@ -29,6 +29,9 @@ namespace DotNetMVCLearn_0822
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/dataTables.min.css"));
+
+            bundles.Add(new StyleBundle("~/Script/js").Include(
+                      "~/Scripts/angular.js"));
         }
     }
 }
