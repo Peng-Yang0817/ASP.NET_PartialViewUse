@@ -113,3 +113,17 @@ C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Unity.
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Unity.Interception.pdb
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Unity.Interception.Configuration.dll
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Unity.Interception.Configuration.pdb
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Autofac.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\System.Buffers.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\System.Memory.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\System.Numerics.Vectors.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Autofac.xml
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\System.Buffers.xml
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\System.Memory.xml
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\System.Numerics.Vectors.xml
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Autofac.Integration.Mvc.dll
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_0822\bin\Autofac.Integration.Mvc.xml

@@ -5,8 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using DotNetMVCLearn_IOCService.IServices;
 using DotNetMVCLearn_IOCService.Models;
+using Autofac;
 
 using Unity;
+using Autofac.Core;
 
 namespace DotNetMVCLearn_IOCService
 {
@@ -41,6 +43,42 @@ namespace DotNetMVCLearn_IOCService
             Console.WriteLine("透過[Dependency]註冊 {0} 成功!", serviceC.serviceA.GetServiceName());
             Console.WriteLine("透過[InjectionMethod]註冊的 {0} 成功!", serviceC.serviceBNew.serviceName);
             serviceC.ShowC();
+
+            Console.WriteLine("準備學習AutoFac");
+
+
+            AutofacConfig();
+            Test();
+            Console.ReadLine();
+
+        }
+
+        static IContainer container = null;
+        static void AutofacConfig()
+        {
+            ContainerBuilder builder = new ContainerBuilder();
+            builder.RegisterType<MyService>().As<IMyService>();
+            builder.RegisterType<MyAnotherService>().As<IMyAnotherService>();
+            container = builder.Build();
+        }
+        static void Test()
+        {
+            using (var scope = container.BeginLifetimeScope())
+            {
+                var monster1 = scope.Resolve<IMyService>();
+                monster1.DoSomething();
+                var monster2 = scope.Resolve<IMyAnotherService>();
+                monster2.DoAnotherSomething();
+            }
+        }
+
+        /// <summary>
+        /// 方法注入
+        /// </summary>
+        /// <param name="myAnotherService"></param>
+        public static void GetServiceMethod(IMyAnotherService myAnotherService)
+        {
+            myAnotherService.DoAnotherSomething();
         }
     }
 }

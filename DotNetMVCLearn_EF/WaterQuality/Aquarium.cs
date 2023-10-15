@@ -30,5 +30,8 @@ namespace DotNetMVCLearn_EF.WaterQuality
 
         [StringLength(50)]
         public string customAquaruimName { get; set; }
+
+        // ÃöÁp
+        public virtual Auth001 Auth001 { get; set; }
     }
 }

@@ -16,3 +16,4 @@ C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_IOCService\obj\
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_IOCService\bin\Debug\net6.0\Unity.Abstractions.dll
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_IOCService\bin\Debug\net6.0\Unity.Container.dll
 C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_IOCService\obj\Debug\net6.0\DotNetMVCLearn_IOCService.csproj.CopyComplete
+C:\Codding\DotNetLearnAndTest\DotNetMVCLearn_0822\DotNetMVCLearn_IOCService\bin\Debug\net6.0\Autofac.dll

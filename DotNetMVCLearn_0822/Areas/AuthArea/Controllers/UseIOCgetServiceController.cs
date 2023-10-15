@@ -69,6 +69,7 @@ namespace DotNetMVCLearn_0822.Areas.AuthArea.Controllers
             WaterQualityService waterQualityService = container.Resolve<WaterQualityService>();
 
             Auth001 data = waterQualityService.Find<Auth001>(Auth001Id);
+            
             if (data == null)
             {
                 return RedirectToAction("Index", "UseIOCgetService", new { area = "AuthArea" });
